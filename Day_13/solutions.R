@@ -96,4 +96,4 @@ apply(foldings, 1, \(x) {
 
 # g. plot password
 mat[mat > 1] <- 1
-pheatmap::pheatmap(mat2, cluster_rows=F, cluster_cols=F, cellwidth=5, cellheight=5, color=c('white', 'black'), legend=F, border_color=NA)
+pheatmap::pheatmap(mat, cluster_rows=F, cluster_cols=F, cellwidth=5, cellheight=5, color=c('white', 'black'), legend=F, border_color=NA)
