@@ -34,10 +34,8 @@ apply(df, 1, \(x) mat[x[2], x[1]] <<- 1 )
 fold_y <- function(mat, yline) {
     # get upper matrix
     up <- mat[1:(yline-1), ]
-    dim(up)
     # get lower matrix
     down <- mat[(yline+1):nrow(mat), ] %>% apply(2, rev)
-    dim(down)
     # get row number delta
     delta <- nrow(up) - nrow(down)
         # CASE 1: both matrix of same height
